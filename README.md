@@ -140,7 +140,9 @@ password: **** << DB Password
 socket: /var/run/mysqld/mysqld.sock
 
 **Create the Database**
+
 Run, rake db:create
+
 > Output:
 Created database 'myapp_development'
 Created database 'myapp_test'
