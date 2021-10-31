@@ -39,6 +39,7 @@ Either use the user account you created during the installation or create a user
 - Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 - Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 - Lastly run, exec $SHELL
+
 - Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 **Append bashrc**
