@@ -120,8 +120,10 @@ Than enter, exit
 **Install the mysql2 extension**
 Run, gem install mysql2
 **Create Rails Application**
+
 Run, cd ~
 Next run, rails new myapp -d mysql
+
 > You can name your new **myapp** whatever you want.
 
 Run, cd myapp
