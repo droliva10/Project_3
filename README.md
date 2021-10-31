@@ -197,10 +197,9 @@ socket: /var/run/mysqld/mysqld.sock
 Run, rake db:create
 
 > Output:
-> 
-  Created database 'myapp_development'
+Created database 'myapp_development'
   
-  Created database 'myapp_test'
+Created database 'myapp_test'
 
 ## Validate Rails Application
 Run, rails server -b 0.0.0.0
