@@ -9,76 +9,68 @@ Either use the user account you created during the installation or create a user
 
 ## Install Dependencies
 
-Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+- Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
 
 ## Install Node.js
 **Latest Release**
 
-Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-
-Next run, sudo apt install -y nodejs
-
-Than run, sudo apt-get install gcc g++ make
+- Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+- Next run, sudo apt install -y nodejs
+- Than run, sudo apt-get install gcc g++ make
 
 ## Install yarn
 **Add to Repository**
 
-Run, curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-
-Next run, echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+- Run, curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+- Next run, echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 **Installation Command**
 
-Run, sudo apt update && sudo apt install -y yarn
+- Run, sudo apt update && sudo apt install -y yarn
 
 ## Install Ruby
 **Using rbenv**
 
-Run, cd ~
-
-Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+- Run, cd ~
+- Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 **Append bashrc file**
 
-Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-
-Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-
-Lastly run, exec $SHELL
-
-Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+- Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+- Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+- Lastly run, exec $SHELL
+- Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 **Append bashrc**
 
-Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-
-Than run, exec $SHELL
+- Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+- Than run, exec $SHELL
 
 **Installation Command**
 **Latest Version (3.0.2)**
 
-Run, rbenv install 3.0.2
-
-Next run, rbenv global 3.0.2
+- Run, rbenv install 3.0.2
+- Next run, rbenv global 3.0.2
 
 **Check Ruby Version**
 
-Run, ruby -v
+- Run, ruby -v
 
 >Output should look like:
 ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux]
 
 **Install the Bundler**
 
-Run, gem install bundler
+- Run, gem install bundler
 
 ## Install Rails
 **Installation Command**
 
-Run, gem install rails
+- Run, gem install rails
+
 **Check Version**
 
-Run, rails -v
+- Run, rails -v
 
 >Output:
 Rails 6.1.4.1
@@ -87,15 +79,13 @@ Rails 6.1.4.1
 ## Install MariaDB
 **Use Ubuntu Repository**
 
-Run, sudo apt update
-
-Next run, sudo apt install -y mariadb-server mariadb-client
-
-Than run, sudo apt install -y libmariadb-dev
+- Run, sudo apt update
+- Next run, sudo apt install -y mariadb-server mariadb-client
+- Than run, sudo apt install -y libmariadb-dev
 
 **Use mysql secure installation**
 
-Run, sudo mysql_secure_installation
+- Run, sudo mysql_secure_installation
 
 > In order to log into MariaDB to secure it, we'll need the current
 password for the root user. If you've just installed MariaDB, and
@@ -138,7 +128,7 @@ Thanks for using MariaDB!
 
 **Log into MariaDB as root user**
 
-Run, sudo mysql -u root -p
+- Run, sudo mysql -u root -p
 
 > Use root password you created in mysql_secure_installation.
 > 
@@ -154,7 +144,7 @@ Lastly enter, quit;
 **Create Database User**
 **Login as root**
 
-Run, sudo mysql -u root -p
+- Run, sudo mysql -u root -p
 
 Enter, CREATE USER 'user'@'localhost' IDENTIFIED BY 'password' ;
 
@@ -166,13 +156,12 @@ Than enter, exit
 
 **Install the mysql2 extension**
 
-Run, gem install mysql2
+- Run, gem install mysql2
 
 **Create Rails Application**
 
-Run, cd ~
-
-Next run, rails new myapp -d mysql
+- Run, cd ~
+- Next run, rails new myapp -d mysql
 
 > You can name your new **myapp** whatever you want.
 
@@ -180,7 +169,7 @@ Run, cd myapp
 
 **Update configuration file with the database information.**
 
-Run, sudo vi config/database.yml
+- Run, sudo vi config/database.yml
 
 > Enter DB user details shown like below.
 default: &default
@@ -193,7 +182,7 @@ socket: /var/run/mysqld/mysqld.sock
 
 **Create the Database**
 
-Run, rake db:create
+- Run, rake db:create
 
 > Output:
 > 
@@ -202,7 +191,7 @@ Created database 'myapp_development'
 Created database 'myapp_test'
 
 ## Validate Rails Application
-Run, rails server -b 0.0.0.0
+- Run, rails server -b 0.0.0.0
 
 [Welcome_Page](Images/Welcome_Rails.png)
 
