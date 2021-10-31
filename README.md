@@ -16,8 +16,10 @@ Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential
 Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 Next run, sudo apt install -y nodejs
 Than run, sudo apt-get install gcc g++ make
+
 ## Install yarn
 **Add to Repository**
+
 Run, curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
 Next run, echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 **Installation Command**
