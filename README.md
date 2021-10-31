@@ -29,7 +29,8 @@ Either use the user account you created during the installation or create a user
 - Run, sudo apt update && sudo apt install -y yarn
 
 ## Install Ruby
-**Using rbenv**
+**Use rbenv**
+**Clone from repo**
 
 - Run, cd ~
 - Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -39,10 +40,11 @@ Either use the user account you created during the installation or create a user
 - Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 - Lastly run, exec $SHELL
 
+**Clone from repo**
+
 - Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-**Append bashrc**
-
+**Append bashrc file**
 - Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 - Than run, exec $SHELL
 
