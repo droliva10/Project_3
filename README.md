@@ -180,6 +180,7 @@ Next run, rails new myapp -d mysql
 Run, cd myapp
 
 **Update configuration file with the database information.**
+
 Run, sudo vi config/database.yml
 
 > Enter DB user details shown like below.
