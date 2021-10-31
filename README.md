@@ -89,10 +89,13 @@ Rails 6.1.4.1
 **Use Ubuntu Repository**
 
 Run, sudo apt update
+
 Next run, sudo apt install -y mariadb-server mariadb-client
+
 Than run, sudo apt install -y libmariadb-dev
 
 **Use mysql secure installation**
+
 Run, sudo mysql_secure_installation
 
 > In order to log into MariaDB to secure it, we'll need the current
