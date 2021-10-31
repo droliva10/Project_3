@@ -131,8 +131,11 @@ Run, sudo mysql -u root -p
 > Use root password you created in mysql_secure_installation.
 > 
 Enter, use mysql;
+
 Than enter, update user set plugin='mysql_native_password' where user='root';
+
 Next enter, flush privileges;
+
 Lastly enter, quit;
 
 ## Create a Database
@@ -140,8 +143,11 @@ Lastly enter, quit;
 **Login as root**
 
 Run, sudo mysql -u root -p
+
 Enter, CREATE USER 'user'@'localhost' IDENTIFIED BY 'password' ;
+
 Next enter, GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' ;
+
 Than enter, exit
 
 > Use the user you are logged in under.
