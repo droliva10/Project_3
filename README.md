@@ -9,8 +9,10 @@ Than run, sudo apt upgrade
 
 ## Install Dependencies
 Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+
 ## Install Node.js
 **Latest Release**
+
 Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 Next run, sudo apt install -y nodejs
 Than run, sudo apt-get install gcc g++ make
