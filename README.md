@@ -5,6 +5,7 @@ https://ubuntu.com/download/server
 Either use the user account you created during the installation or create a user with sudo privileges after installation. 
 
 Run, sudo apt update
+
 Than run, sudo apt upgrade
 
 ## Install Dependencies
@@ -15,7 +16,9 @@ Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential
 **Latest Release**
 
 Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
 Next run, sudo apt install -y nodejs
+
 Than run, sudo apt-get install gcc g++ make
 
 ## Install yarn
