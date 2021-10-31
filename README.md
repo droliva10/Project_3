@@ -30,42 +30,58 @@ Run, sudo apt update && sudo apt install -y yarn
 
 ## Install Ruby
 **Using rbenv**
+
 Run, cd ~
 Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
 **Append bashrc file**
+
 Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 Lastly run, exec $SHELL
 
 Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 **Append bashrc**
+
 Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 Than run, exec $SHELL
+
 **Installation Command**
 **Latest Version (3.0.2)**
+
 Run, rbenv install 3.0.2
 Next run, rbenv global 3.0.2
+
 **Check Ruby Version**
+
 Run, ruby -v
+
 >Output should look like:
 ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux]
 
 **Install the Bundler**
+
 Run, gem install bundler
+
 ## Install Rails
 **Installation Command**
+
 Run, gem install rails
 **Check Version**
+
 Run, rails -v
+
 >Output:
 Rails 6.1.4.1
 
 # Create Rails Application
 ## Install MariaDB
 **Use Ubuntu Repository**
+
 Run, sudo apt update
 Next run, sudo apt install -y mariadb-server mariadb-client
 Than run, sudo apt install -y libmariadb-dev
+
 **Use mysql secure installation**
 Run, sudo mysql_secure_installation
 
@@ -109,7 +125,9 @@ installation should now be secure.
 Thanks for using MariaDB!
 
 **Log into MariaDB as root user**
+
 Run, sudo mysql -u root -p
+
 > Use root password you created in mysql_secure_installation.
 > 
 Enter, use mysql;
@@ -120,14 +138,18 @@ Lastly enter, quit;
 ## Create a Database
 **Create Database User**
 **Login as root**
+
 Run, sudo mysql -u root -p
 Enter, CREATE USER 'user'@'localhost' IDENTIFIED BY 'password' ;
 Next enter, GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' ;
 Than enter, exit
+
 > Use the user you are logged in under.
 
 **Install the mysql2 extension**
+
 Run, gem install mysql2
+
 **Create Rails Application**
 
 Run, cd ~
@@ -137,8 +159,10 @@ Next run, rails new myapp -d mysql
 > You can name your new **myapp** whatever you want.
 
 Run, cd myapp
+
 **Update configuration file with the database information.**
 Run, sudo vi config/database.yml
+
 > Enter DB user details shown like below.
 default: &default
 adapter: mysql2
