@@ -36,24 +36,30 @@ Run, sudo apt update && sudo apt install -y yarn
 **Using rbenv**
 
 Run, cd ~
+
 Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 **Append bashrc file**
 
 Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+
 Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+
 Lastly run, exec $SHELL
 
 Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
 **Append bashrc**
 
 Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+
 Than run, exec $SHELL
 
 **Installation Command**
 **Latest Version (3.0.2)**
 
 Run, rbenv install 3.0.2
+
 Next run, rbenv global 3.0.2
 
 **Check Ruby Version**
