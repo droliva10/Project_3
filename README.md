@@ -3,8 +3,10 @@
 **Step by step instructions to install and deploy Ruby on Rails.**
 https://ubuntu.com/download/server
 Either use the user account you created during the installation or create a user with sudo privileges after installation. 
+
 Run, sudo apt update
 Than run, sudo apt upgrade
+
 ## Install Dependencies
 Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
 ## Install Node.js
