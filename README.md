@@ -144,7 +144,7 @@ Created database 'myapp_test'
 
 ## Validate Rails Application
 Run, rails server -b 0.0.0.0
->
+![Welcome_Page](Images/Welcome_Rails)
 
 # Publication
 
