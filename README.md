@@ -4,8 +4,14 @@
 https://ubuntu.com/download/server
 Either use the user account you created during the installation or create a user with sudo privileges after installation. 
 
-- Run, sudo apt update
-- Than run, sudo apt upgrade
+- Run:
+```
+ sudo apt update
+```
+- Run:
+```
+sudo apt upgrade
+```
 
 ## Install Dependencies
 
