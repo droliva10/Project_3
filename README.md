@@ -282,8 +282,7 @@ encoding: utf8mb4
 pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 username: root << DB User
 password: **** << DB Password
-socket: /var/run/mysqld/mysqld.sock
-
+socket: /var/run/mysqld/mysqld.sock 
 
 **Create the Database**
 
