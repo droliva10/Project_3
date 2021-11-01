@@ -102,28 +102,46 @@ exec $SHELL
 **Installation Command**
 **Latest Version (3.0.2)**
 
-- Run, rbenv install 3.0.2
-- Next run, rbenv global 3.0.2
+- Run:
+```
+rbenv install 3.0.2
+```
+- Run:
+```
+rbenv global 3.0.2
+```
 
 **Check Ruby Version**
 
-- Run, ruby -v
+- Run:
+```
+ruby -v
+```
 
 >Output should look like:
 ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux]
 
 **Install the Bundler**
 
-- Run, gem install bundler
+- Run:
+```
+gem install bundler
+```
 
 ## Install Rails
 **Installation Command**
 
-- Run, gem install rails
+- Run:
+```
+gem install rails
+```
 
 **Check Version**
 
-- Run, rails -v
+- Run:
+```
+rails -v
+```
 
 >Output:
 Rails 6.1.4.1
@@ -132,13 +150,25 @@ Rails 6.1.4.1
 ## Install MariaDB
 **Use Ubuntu Repository**
 
-- Run, sudo apt update
-- Next run, sudo apt install -y mariadb-server mariadb-client
-- Than run, sudo apt install -y libmariadb-dev
+- Run:
+```
+sudo apt update
+```
+- Run:
+```
+sudo apt install -y mariadb-server mariadb-client
+```
+- Run:
+```
+sudo apt install -y libmariadb-dev
+```
 
 **Use mysql secure installation**
 
-- Run, sudo mysql_secure_installation
+- Run:
+```
+sudo mysql_secure_installation
+```
 
 > In order to log into MariaDB to secure it, we'll need the current
 password for the root user. If you've just installed MariaDB, and
@@ -181,7 +211,10 @@ Thanks for using MariaDB!
 
 **Log into MariaDB as root user**
 
-- Run, sudo mysql -u root -p
+- Run:
+```
+sudo mysql -u root -p
+```
 
 > Use root password you created in mysql_secure_installation.
 > 
