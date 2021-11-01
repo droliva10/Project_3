@@ -15,44 +15,89 @@ sudo apt upgrade
 
 ## Install Dependencies
 
-- Run, sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+- Run:
+```
+sudo apt install -y curl gnupg2 dirmngr git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+```
 
 ## Install Node.js
 **Latest Release**
 
-- Run, curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-- Next run, sudo apt install -y nodejs
-- Than run, sudo apt-get install gcc g++ make
+- Run:
+```
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+```
+- Run:
+```
+sudo apt install -y nodejs
+```
+- Run:
+```
+sudo apt-get install gcc g++ make
+```
 
 ## Install yarn
 **Add to Repository**
 
-- Run, curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-- Next run, echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+- Run:
+```
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+```
+- Run:
+```
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
 
 **Installation Command**
 
-- Run, sudo apt update && sudo apt install -y yarn
+- Run:
+```
+sudo apt update && sudo apt install -y yarn
+```
 
 ## Install Ruby
 **Use rbenv**
 **Clone from repo**
 
-- Run, cd ~
-- Next run, git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+- Run:
+```
+cd ~
+```
+- Run:
+```
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
 
 **Append bashrc file**
-- Next run, echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-- Next run, echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-- Lastly run, exec $SHELL
+- Run:
+```
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+```
+- Run:
+```
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+```
+- Run:
+```
+exec $SHELL
+```
 
 **Clone from repo**
 
-- Run, git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+- Run:
+```
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
 
 **Append bashrc file**
-- Run, echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-- Than run, exec $SHELL
+- Run:
+```
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+```
+- Run:
+```
+exec $SHELL
+```
 
 **Installation Command**
 **Latest Version (3.0.2)**
