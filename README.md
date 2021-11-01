@@ -275,6 +275,7 @@ cd myapp
 sudo vi config/database.yml
 ```
 Enter DB user details shown like below.
+
 > default: &default
 adapter: mysql2
 encoding: utf8mb4
