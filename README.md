@@ -230,7 +230,10 @@ Lastly enter, quit;
 **Create Database User**
 **Login as root**
 
-- Run, sudo mysql -u root -p
+- Run:
+```
+sudo mysql -u root -p
+```
 
 Enter, CREATE USER 'user'@'localhost' IDENTIFIED BY 'password' ;
 
@@ -242,22 +245,37 @@ Than enter, exit
 
 **Install the mysql2 extension**
 
-- Run, gem install mysql2
+- Run:
+```
+gem install mysql2
+```
 
 **Create Rails Application**
 
-- Run, cd ~
-- Next run, rails new myapp -d mysql
+- Run:
+```
+cd ~
+```
+- Run:
+```
+rails new myapp -d mysql
+```
 
 > You can name your new **myapp** whatever you want.
 
-Run, cd myapp
+- Run:
+```
+cd myapp
+```
 
 **Update configuration file with the database information.**
 
-- Run, sudo vi config/database.yml
-
+- Run
 ```
+sudo vi config/database.yml
+```
+
+>>
 Enter DB user details shown like below.
 default: &default
 adapter: mysql2
@@ -266,20 +284,26 @@ pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 username: root << DB User
 password: **** << DB Password
 socket: /var/run/mysqld/mysqld.sock
-```
+>>
 
 **Create the Database**
 
-- Run, rake db:create
-
+- Run:
 ```
+rake db:create
+```
+
+>>
 Output:
 Created database 'myapp_development'
 Created database 'myapp_test'
-```
+
 
 ## Validate Rails Application
-- Run, rails server -b 0.0.0.0
+- Run:
+```
+rails server -b 0.0.0.0
+```
 [Welcome_Page](Images/Welcome_Rails.png)
 
 # Publication
