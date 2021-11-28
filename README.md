@@ -2,7 +2,6 @@
 
 **Step by step instructions to install and deploy Ruby on Rails.**
 https://ubuntu.com/download/server
-Either use the user account you created during the installation or create a user with sudo privileges after installation. 
 
 - Run:
 ```
